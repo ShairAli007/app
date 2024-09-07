@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Super Admin Dashboard</h1>
+  
+    <div class="section">
+      <h2>Manage Groups</h2>
+      <button (click)="createGroup()">Create New Group</button>
+      <ul>
+        <li *ngFor="let group of groups">
+          {{ group.name }}
+          <button >Edit</button>
+          <button (click)="deleteGroup(group.id)">Delete</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h2>Manage Users</h2>
+      <button (click)="createUser()">Create New User</button>
+      <ul>
+        <li *ngFor="let user of users">
+          {{ user.username }} ({{ user.role }})
+          <button (click)="promoteUser(user.id)">Promote</button>
+          <button (click)="deleteUser(user.id)">Delete</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

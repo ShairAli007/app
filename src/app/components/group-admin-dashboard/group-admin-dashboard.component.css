@@ -1,0 +1,93 @@
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .section button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .section button:hover {
+    background-color: #218838;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+
+  select {
+    width: 25%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    background-color: #f9f9f9; 
+    color: #333; 
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    cursor: pointer; 
+  }
+  
+  
+  select::after {
+    content: '▼'; 
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  option {
+    padding: 10px; 
+    background-color: white; 
+    color: #333; 
+  }
+  
+  
+  select:hover {
+    border-color: #888; 
+    background-color: #f1f1f1; 
+  }
+  
+  
+  select:focus {
+    outline: none; 
+    border-color: #007bff; 
+  }
+  
+  option:disabled {
+    background-color: #eee;
+    color: #999;}
